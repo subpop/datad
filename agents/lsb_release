@@ -1,0 +1,7 @@
+#!/bin/bash
+
+LSB_RELEASE=$(which lsb_release)
+
+if [ "${LSB_RELEASE}" ]; then
+    ${LSB_RELEASE} --all
+fi
